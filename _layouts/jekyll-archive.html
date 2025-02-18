@@ -2,13 +2,19 @@
 layout: archive
 ---
 
+<!-- {% for post in page.posts %}
+  {% include archive-single.html %}
+{% endfor %} -->
+
+<!-- {% include breadcrumbs.html %} -->
+
 <style>
   #page-title {
     display: none;
   }
 </style>
 
-<h1>{{ page.type | capitalize }}: {{ page.title }}</h1>
+<h1>{{ page.type | capitalize }}: {{ page.title | capitalize }}</h1>
 
 <div class="entries-list">
   {% for post in page.posts %}

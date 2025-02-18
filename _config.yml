@@ -35,12 +35,16 @@ defaults:
       type: posts
     values:
       read_time: true
-      comments: true
       share: true
-      related: true
       show_date: true
       permalink: /:categories/:title/
-      breadcrumbs: true
+  - scope:
+      path: "_posts/Speaker"
+      type: posts
+    values:
+      categories: [Speaker]
+
+breadcrumbs: true
 
 jekyll-archives:
   enabled:
